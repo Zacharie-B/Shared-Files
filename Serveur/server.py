@@ -72,7 +72,8 @@ class Server:
         while data:
             self.s1.send(data)
             data = txt.read(1024)
-        print("heloo")
+        pv = ";"
+        self.s1.send(pv.encode())
         self.s1.close()
   
 
