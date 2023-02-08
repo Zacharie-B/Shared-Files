@@ -72,6 +72,7 @@ class Server:
         while data:
             self.s1.send(data)
             data = txt.read(1024)
+        print("heloo")
         self.s1.close()
   
 
